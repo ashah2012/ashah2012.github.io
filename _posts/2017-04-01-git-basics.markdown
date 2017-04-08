@@ -7,18 +7,25 @@ author: "abhishek shah"
 ---
 
 Git is now de facto version control system. Everybody is using GIT, and if you aren't, then it's time that you should start using it too. 
-I'll cover few basic git commands in this article and more advance commands in the next article. Frankly, there is no advance commands, just little lazy to write it tonight. 
+Git is distributed version control system. All the repository is as good as other. There are many organizations that are switching to DVCS, and since Git being the most popular one, the choice is obivious. Git also have very popular remote repository Github and Bitbucket. Github is more popular among the open source community where people like to have others contribute in their project too.  
 
-Here we go,
+Few basic git commands are - 
 
 ```
-$ mkdir git-demo
-$ cd git-demo
-/git-demo$ git init
-Initialized empty Git repository in /home/avishek/git-demo/.git/
+git init
+git add .
+git commit -m "message for commit"
+git remote add origin <url-to-remote-repo>
+git push -u origin master
+git pull origin master
+git log
+git status
 ```
-Initializes the current directory as git repository. 
-Next, we'll create a file and save it as file-one.txt
+
+You can learn the basics of git in less than 30 minutes. But, first I would recommend that you understand git's flow. You can learn git online at your browser at [Codeschool](https://try.github.io/).
+
+
+
 
 
 
