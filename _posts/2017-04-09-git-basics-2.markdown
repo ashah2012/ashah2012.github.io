@@ -1,0 +1,57 @@
+---
+layout: post
+title:  "Git Basic Tutorial 2"
+date:   2017-04-09 07:10:19 +0530
+categories: git
+author: "abhishek shah"
+---
+
+To unstagae files, files are only unstagged at this moment, but still present.
+```
+git reset <file-name>
+```
+
+We may want to go back to previous state, we will go back to place where, when last commit took place
+```
+git checkout -- <file-name>
+```
+checkout takes us back to the point mentioned as argument.
+
+
+## Branching Basics
+You may need to work on a bug or a new feature and you'd like to work on a separate branch out the main branch. So that, if anything goes wrong you can easily go back to previous stable state.
+
+
+```
+git branch <branch-name>
+```
+Creates a branch named - branch-name
+
+```
+git branch
+```
+Lists all the branches and points out the current branch with *.
+
+To, move from current branch to one of the feature branch listed, use the following comman. 
+```
+git checkout <branch-name>
+```
+
+
+## Merging Basics
+
+To merge the changes from current branch, switch back to master first. 
+```
+git checkout master
+```
+Then, to merge -
+```
+git merge <branch-name>
+```
+
+You might want to delete the branch after merging. 
+```
+git branch -d <branch-name>
+```
+
+In the next article we would see how to clone, rebase and other important stuffs.
