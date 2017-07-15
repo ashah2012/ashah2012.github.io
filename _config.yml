@@ -27,7 +27,7 @@ github_username:  ashah2012
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-cayman
+theme: minima
 gems:
   - jekyll-feed
 exclude:
