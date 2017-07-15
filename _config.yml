@@ -13,15 +13,16 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: java and everything java
+title: abhishek shah's blog
 email: ashah201291@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  JavaJedi contains all the things that you need know about
-  Java and other open source libraries. You will find articles on
-  Java EE, Spring framework, Java persistence, Java 8.
-  
+  This blog contains things that I learn everyday.
+  Properly writing everything helps you remember
+  them longer.
+
+
 baseurl: "" # the subpath of your site, e.g. /blog
-url: http://javajedi.org
+url: http://abhishek-shah.org
 twitter_username: avishek_20
 github_username:  ashah2012
 
