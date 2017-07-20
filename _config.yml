@@ -40,3 +40,7 @@ permalink: none
 
 #google-analytics
 google_analytics: UA-102588107-1
+
+#disqus
+disqus:
+    shortname: abhishek-shah-org
