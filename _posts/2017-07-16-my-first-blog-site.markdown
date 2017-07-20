@@ -45,5 +45,8 @@ bundle exec jekyll serve
 Github pages provide a lot of way to set your domain and make your *username.github.io* available at your domain name specified. You can set A, ALIAS, ANAME record at your name provider directing to URL *username.github.io* or to the ip provided by Github pages. A full step by step guide can be found [here](https://help.github.com/articles/using-a-custom-domain-with-github-pages/).
 
 
+## Comment Section
+I've added the comment section on 20th July, 2017, using [Disqus](https://disqus.com/). It's fairly simple to add a comment section from Disqus, just add the short-name from disqus to **_config.yml**.
+
 Hope, you all like this article. If you need any help twitter me!
 Have a good day.
