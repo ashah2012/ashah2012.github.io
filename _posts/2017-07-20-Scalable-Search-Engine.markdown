@@ -34,8 +34,10 @@ Our Storm topology will have bolts and spouts. A Kafka spout to be specific, bec
 **Now something very important, we want to crawl the URLs in breadth first fashion**. Because a seed page may have too much of internal links, we don't want to keep ourself too much busy with indexing one page, we want to cover the entire web. But definetly we will cover all the internal URLs of the seed page, though later.
 So, inserting in the Kafka topic will be in accordance to breadth first search fashion.
 
-If you'd like to suggest anything better with this approach, please comment or tweet me.
-**To be continued**
+So, by now we have a Kafka Spout which reads the URLs from Kafka topic. URL is passesd to Bolt A - which parses the html document. Bolt A passes unique URLs to Bolt B - which puts back in Kafka topic.
+
+## Step Two - Integrations
+
 
 
 Repository created at github already. It can be found [here](https://github.com/ashah2012/scalable-search-engine).

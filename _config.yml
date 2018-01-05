@@ -16,9 +16,8 @@
 title: abhishek shah's blog
 email:
 description: > # this means to ignore newlines until "baseurl:"
-  This blog contains things that I learn everyday.
-  Properly writing everything helps you remember
-  them longer.
+ Submit a Github Pull Request if you would like
+ to contribute in any way.
 
 
 baseurl: "" # the subpath of your site, e.g. /blog
