@@ -114,3 +114,5 @@ Installing *Docker CE* is fairly simple in Ubuntu. All we did was :
 * Update the `apt` package index
 * Add Docker GPG key
 * Install from repository
+
+In the next article, we will see how we can use Docker for Java development.
