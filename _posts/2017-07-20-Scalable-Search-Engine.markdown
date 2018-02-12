@@ -4,6 +4,7 @@ title:  "Create your own Scalable Search Engine"
 date:   2017-07-20 00:00:00 +0530
 categories: projects
 author: "abhishek shah"
+drafts: true
 ---
 
 ## A simple and scalable search engine

@@ -2,8 +2,9 @@
 layout: post
 title:  "Why you should learn Docker?"
 date:   2017-07-18 00:00:00 +0530
-categories: devops
+categories: docker
 author: "abhishek shah"
+drafts: true
 ---
 
 [Docker](https://www.docker.com/) is a sensation now. It was little difficult for me six months ago to understand why Docker was created? Isn't Docker the 20th solution to the previous 19th solution for software shipment? VMs already existed to promote our code through different environments through testing and finally in the production environment. It would not be fair to point out the advantages of Docker in a single article. I'll give it a due share of credit in articles to come, and honestly, the more I've clear and concise advantages of it.
