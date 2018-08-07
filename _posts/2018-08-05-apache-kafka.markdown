@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Apache Kafka"
+title:  "Apache Kafka Basics"
 date:   2018-08-05 00:00:00 +0530
 categories: kafka
 author: "abhishek shah"
@@ -8,9 +8,9 @@ author: "abhishek shah"
 
 ## 1. Overview
 
-In Kafka, the system of Publish and Subscribe has been brought forward in a more resilient and fault tolerant way. In Kafka entity producing the event/message are called Publisher and entity consuming the message are Consumer. The Publisher has their own set of APIs known as Publisher APIs, and Consumer has their own set of APIs, known as Consumer APIs.
+In [Apache Kafka](https://kafka.apache.org), the system of Publish and Subscribe has been brought forward in a more resilient and fault tolerant way. In Kafka entity producing the event/message are called Publisher and entity consuming the message are Consumer. The Publisher has their own set of APIs known as [Producer API](https://kafka.apache.org/documentation.html#producerapi), and Consumer has their own set of APIs, known as [Consumer API](https://kafka.apache.org/documentation.html#consumerapi).
 
-The messages are categorized by the Topics in Kafka. Each Topic has a unique name. The Publisher should know the name of the Topic they want to publish their messages to, similarly, the Consumers should also know the names of the Topics they want to read the message from.
+The messages are categorized by the *Topics in Kafka*. Each Topic has a unique name. The Publisher should know the name of the Topic they want to publish their messages to, similarly, the Consumers should also know the names of the Topics they want to read the message from.
 
 ## 2. Kafka Brokers
 
@@ -24,6 +24,29 @@ Usually, in a distributed system, the workers elect the controller node. Mostly,
 
 * Maintain the availability of the nodes.
 * Track the progress of the tasks assigned to the follower nodes.
+
+## 4. Fault Tolerance - Replication Factor
+
+When a task is assigned to node / broker, they select some backup peers. These backup peers take up the task from leader when they go down. The number of the backup peers assigned depends upon the *Replication Factor*.
+
+*Setting up Quorum* - The controller assigns the task to a leader which can form a *quorum*. If a leader fails to form a quorum then controller assigns the task to some other leader who can form a quorum. A quorum is formed when a leader is assigned a task and the follower nodes acknowledges the fact that when leader goes down they will have to perform the task in it's place. This arragement is what we refer to as *setting up a quorum*.
+
+## 5. Topics
+
+Topics are a logical entity. An abstraction of the categorization of the messages. Messages are stored in *topics* in time ordered sequence. Each message consists of :
+
+* Time Stamp.
+* Referenceable Id.
+* Binary Data / payload.
+
+*Message Offset* - These are identifiers which tell the *Kafka Consumer* what message to read next. Offsets are actually the message id. The offsets are maintained by Kafka Consumers. When the consumer has read the last message, it keeps a note of the last offset. When a new message arrives an event notifies the consumer.
+
+*Message Retention Policy* - Each topic is configurable, as for how long they want to preserve a message. By default, it is one hundred and sixty-eight hours or a week. It is configurable and can be found in `server.properties`  file. Retention period depends on the brokers.
+
+Also, each topic can span over multiple brokers. This is achieved using the partitions.
+
+
+
 
 
 
