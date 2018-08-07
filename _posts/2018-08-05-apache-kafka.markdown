@@ -8,7 +8,7 @@ author: "abhishek shah"
 
 ## 1. Overview
 
-In [Apache Kafka](https://kafka.apache.org), the system of Publish and Subscribe has been brought forward in a more resilient and fault tolerant way. In Kafka entity producing the event/message are called Publisher and entity consuming the message are Consumer. The Publisher has their own set of APIs known as [Producer API](https://kafka.apache.org/documentation.html#producerapi), and Consumer has their own set of APIs, known as [Consumer API](https://kafka.apache.org/documentation.html#consumerapi).
+In [Apache Kafka](https://kafka.apache.org), the system of Publish and Subscribe has been brought forward in a more resilient and fault tolerant way. In Kafka entity producing the event/message are called Producer and entity consuming the message are Consumer. The Publisher has their own set of APIs known as [Producer API](https://kafka.apache.org/documentation.html#producerapi), and Consumer has their own set of APIs, known as [Consumer API](https://kafka.apache.org/documentation.html#consumerapi).
 
 The messages are categorized by the *Topics in Kafka*. Each Topic has a unique name. The Publisher should know the name of the Topic they want to publish their messages to, similarly, the Consumers should also know the names of the Topics they want to read the message from.
 
