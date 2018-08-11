@@ -45,7 +45,7 @@ google_analytics: UA-102588107-1
 disqus:
     shortname: abhishek-shah-org
 #excerpts
-show_excerpts: true
+show_excerpts: false
 
 
 paginate: 7
