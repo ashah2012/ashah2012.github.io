@@ -16,14 +16,14 @@
 title: abhishek shah's blog
 email:
 description: > # this means to ignore newlines until "baseurl:"
- Submit a Github Pull Request if you would like
- to contribute in any way.
+ Articles, proof of concepts, sharing works of 
+ other developers. Important announcements. News and Events.  
 
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: http://abhishek-shah.org
 twitter_username: avishek_20
-github_username:  ashah2012
+github_username: ashah2012
 
 # Build settings
 markdown: kramdown
@@ -44,7 +44,8 @@ google_analytics: UA-102588107-1
 #disqus
 disqus:
     shortname: abhishek-shah-org
-
+#excerpts
+show_excerpts: true
 
 
 paginate: 7
