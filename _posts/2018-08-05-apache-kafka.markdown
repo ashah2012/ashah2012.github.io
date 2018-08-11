@@ -45,6 +45,42 @@ Topics are a logical entity. An abstraction of the categorization of the message
 
 Also, each topic can span over multiple brokers. This is achieved using the partitions.
 
+## 6. Partitions
+
+Topics are represented by one or more physical log files known as *Partitions*. Partition is stored as commit logs in the file system.
+
+The number of partitions that can be created for a partitcular topic is configurable. Each topic must have atleast one partition.
+
+Each partition must reside on one node only. So we should decide the number of partitions clearly before creating a topic. Partitions cannot span over multiple nodes / brokers. If the topic has multiple partitions the message are distributed to partitions exclusively. Each partiton receives a different message. The message are distributed in Round Robin fashion unless specified. 
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
