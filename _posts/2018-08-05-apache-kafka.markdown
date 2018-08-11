@@ -53,6 +53,10 @@ The number of partitions that can be created for a partitcular topic is configur
 
 Each partition must reside on one node only. So we should decide the number of partitions clearly before creating a topic. Partitions cannot span over multiple nodes / brokers. If the topic has multiple partitions the message are distributed to partitions exclusively. Each partiton receives a different message. The message are distributed in Round Robin fashion unless specified. 
 
+## 7. Conclusion
+
+In this article, I wanted to stay away from code snippets and just concentrate on the theory part. In the next article, I will write about how the Producers connect to Zookeeper and Broker to create a message and explore Producer API to create a message from a Java program.
+
  
 
 
