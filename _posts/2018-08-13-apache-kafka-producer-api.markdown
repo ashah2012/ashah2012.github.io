@@ -13,7 +13,7 @@ These API allows creation of Kafka Producer and expose various other options to 
 
 ## Maven Dependency
 
-Add the following dependency in your ` pom.xml `. 
+Add the following dependency in your `pom.xml`. 
 
 ```
 <dependency>
@@ -23,7 +23,7 @@ Add the following dependency in your ` pom.xml `.
 </dependency>
 ```
 
-Kafka clients include all the jars for Producer and Consumer. Same maven dependency can be used while writing Consumer clients using Consumer clients.
+Kafka clients include all the jars for Producer and Consumer. Same maven dependency can be used while writing Consumer clients using Consumer API.
 
 ## Configurations
 
