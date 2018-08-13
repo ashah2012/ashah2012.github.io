@@ -22,3 +22,24 @@ Add the following dependency in your ` pom.xml `.
     <version>2.0.0</version>
 </dependency>
 ```
+
+Kafka clients include all the jars for Producer and Consumer. Same maven dependency can be used while writing Consumer clients using Consumer clients.
+
+## Configurations
+
+All the configuration data is written in `java.util.Dictionary.Hashtable.Properties` and passed as contructor parameter while instantiating a `Producer`.
+
+Sample code snippet for Producer and passing few configurations for the Producer :
+
+```
+Properties props = new Properties();
+props.put("bootstrap.servers", "localhost:9092");
+props.put("acks", "all");
+props.put("retries", 0);
+props.put("batch.size", 16384);
+props.put("linger.ms", 1);
+props.put("buffer.memory", 33554432);
+props.put("key.serializer", "org.apache.kafka.common.serialization.StringSerializer");
+props.put("value.serializer", "org.apache.kafka.common.serialization.StringSerializer");
+```
+
