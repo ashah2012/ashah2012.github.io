@@ -27,6 +27,7 @@ I can make a scalable search engine for the web. I know it will take a lot of ti
 If you are not familiar with any of the above technology - then there's a good news, I'll be writing articles on each one of those as much as we are able to start working on this project. I believe I would take a year to build the things from bottom up. If you know or have learnt any one of the technology and would like to contribute, please make a pull request on github. More on the contribution later,  most probably at the home page of the project at github.
 
 ## Step One - web scraping
+
 Kafka is a streaming platform and we will use it during web crawling. One of the Kafka topic will have only the URLs to be crawled.
 
 Let's name this Topic - `TO_BE_SEARCHED`. We will start with a good seed page. A good seed page is web page which has lot of unique external URLs. So, our Kafka topic will have the URL of the seed page.
@@ -37,8 +38,21 @@ So, inserting in the Kafka topic will be in accordance to breadth first search f
 
 So, by now we have a Kafka Spout which reads the URLs from Kafka topic. URL is passesd to Bolt A - which parses the html document. Bolt A passes unique URLs to Bolt B - which puts back in Kafka topic.
 
-## Step Two - Integrations
+## Step Two - Indexing
 
+Apache Flume is a data aggregator tool and we will use to move the data from one place to another. When Bolt A parse the HTML document, it will create a JSON document which have all the HTML elements as keys and each document will have a unique identifier – the URL of the page. 
 
+The JSON file is created, it will be consumed by Flume and Flume will have a Solr sink. 
+A collection should be created with an appropriate name, and replication factor. Schema should be designed to accommodate the JSON fields. Strictly, no managed schema should be use. A data import handler should be designed in Solr for indexing documents coming from Flume. 
 
+Indexing strategy – proper interval of indexing should be chosen and auto commit with indexing should be set to false. Commits after indexing should only occur once every huge chunk of data is indexed. It would not be wise to choose the indexing strategy and committing without proper performance metrics.
+
+## Step Three - Searching
+
+The architecture is ready now, search results will be available as soon as indexing is done. Enchancing the search results can be attain once indexed data is available. Features such as proximity search can be enabled for better user experience. 
+
+DuckDuckGO is an open source search engine as competent as Google. DuckDuckGo use Apache Solr for indexing their data.
+
+I will start working on it soon. 
 Repository created at github already. It can be found [here](https://github.com/ashah2012/scalable-search-engine).
+Your suggestions are hihgly welcomed.
