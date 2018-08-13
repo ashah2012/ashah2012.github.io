@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Apache Kafka Producer API"
-date:   2018-08-013 00:00:00 +0530
+date:   2018-08-13 00:00:00 +0530
 categories: kafka
 author: "abhishek shah"
 ---
