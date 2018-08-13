@@ -27,7 +27,7 @@ github_username: ashah2012
 
 # Build settings
 markdown: kramdown
-#theme: minima
+theme: minima
 gems:
   - jekyll-feed
   - jekyll-paginate
@@ -49,4 +49,4 @@ show_excerpts: false
 
 
 paginate: 7
-remote_theme: mmistakes/minimal-mistakes
+#remote_theme: mmistakes/minimal-mistakes
