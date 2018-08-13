@@ -29,7 +29,7 @@ Kafka clients include all the jars for Producer and Consumer. Same maven depende
 
 All the configuration data is written in `java.util.Dictionary.Hashtable.Properties` and passed as contructor parameter while instantiating a `Producer`.
 
-Sample code snippet for Producer and passing few configurations for the Producer :
+Sample code snippet illustrating few configurations for the Producer :
 
 ```
 Properties props = new Properties();
