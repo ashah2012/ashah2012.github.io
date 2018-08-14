@@ -8,7 +8,7 @@ author: "abhishek shah"
 
 ## Overview
 
-In this short article, we'll look at running MSSQL in docker container. The official MSSQL image can be found here at [Docker Hub](https://hub.docker.com/_/mysql/).
+In this short article, we'll look at running MYSQL in docker container. The official MYSQL image can be found here at [Docker Hub](https://hub.docker.com/_/mysql/).
 
 ## Downloading and Running the Docker MYSQL Docker image
 
