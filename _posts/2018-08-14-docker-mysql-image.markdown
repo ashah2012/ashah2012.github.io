@@ -23,14 +23,13 @@ mysql:latest
  ```
  If we don't have a local MYSQL image in our Docker host then Docker will download it from Docker Repository. 
  
- ## Understanding the Parameters
+## Understanding the Parameters
  
  * `--detach` - runs the image as background service.
  * `--name` - name of the container.
  * `-e` - sets the password as Environment variable.
  * `mysql:latest` - directing Docker to download the latest tag of the MYSQL image.
  
- ## That's it! 
+## That's it! 
  
- That is all that is required to run a MYSQL database in the Docker host. We can also add `port host_port:container_port` mapping to access the MYSQL database
- from outside the container. 
+That is all that is required to run a MYSQL database in the Docker host. We can also add `port host_port:container_port` mapping to access the MYSQL database from outside the container. 
