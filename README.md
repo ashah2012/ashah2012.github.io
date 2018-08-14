@@ -7,7 +7,7 @@ Visit [here](http://abhishek-shah.org)
 
 ## Apache Kafka
 * [Apache Kafka Basics](http://abhishek-shah.org/kafka/apache-kafka.html)
-* [Producer API](http://abhishek-shah.org/kafka/apache-kafka-producer-api.html)
+* [Producer API](http://abhishek-shah.org/kafka/apache-kafka-producer-api.html) (Incomplete)
 
 ## Docker
 * [Why you should learn Docker](http://abhishek-shah.org/docker/Why-you-should-learn-Docker.html)
