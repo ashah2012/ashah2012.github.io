@@ -26,7 +26,7 @@ mysql:latest
  ## Understanding the Parameters
  
  * `--detach` - runs the image as background service.
- * `--name` - name of the database store in MYSQL.
+ * `--name` - name of the container.
  * `-e` - sets the password as Environment variable.
  * `mysql:latest` - directing Docker to download the latest tag of the MYSQL image.
  
