@@ -15,7 +15,7 @@ These API allows creation of Kafka Producer and expose various other options to 
 
 Add the following dependency in your `pom.xml`. 
 
-```
+```xml
 <dependency>
     <groupId>org.apache.kafka</groupId>
     <artifactId>kafka-clients</artifactId>
@@ -31,7 +31,7 @@ All the configuration data is written in `java.util.Dictionary.Hashtable.Propert
 
 Sample code snippet illustrating few configurations for the Producer :
 
-```
+```java
 Properties props = new Properties();
 props.put("bootstrap.servers", "localhost:9092");
 props.put("acks", "all");

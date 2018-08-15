@@ -14,7 +14,7 @@ In this short article, we'll look at running MYSQL in docker container. The offi
 
 Open up the terminal and run the following command : 
 
-```
+```bash
 docker container run \
 --detach \
 --name mydb \

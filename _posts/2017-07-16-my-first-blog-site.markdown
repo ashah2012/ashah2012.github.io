@@ -7,7 +7,7 @@ author: "abhishek shah"
 tags: jekyll other
 ---
 
- I created this blog site in under 5 minutes. Well technically little more than that.There were issues which had to be sorted out and googled. So if you're looking to create a blog site for yourself or want to help your developer friends, then this is what you were looking for.
+I created this blog site in under 5 minutes. Well technically little more than that.There were issues which had to be sorted out and googled. So if you're looking to create a blog site for yourself or want to help your developer friends, then this is what you were looking for.
 
 There are numerous options, WordPress being the most popular among all. I can't say why I didn't choose WordPress, may be, I didn't find any simple template like the one I'm using here? How's that for starters? And I would be happy to tell you, I'm using the [Minima](https://github.com/jekyll/minima) template while writing this post. Sure, I have plans in future to change the template.
 

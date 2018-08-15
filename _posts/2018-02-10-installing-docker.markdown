@@ -30,7 +30,7 @@ To install Docker CE, we need 64-bit versions of these Ubuntu :
 
 Earlier versions of Docker were known as `docker` or `docker-engine`, and we will remove them, if installed.
 
-```
+```bash
 $ sudo apt-get remove docker docker-engine docker.io
 ```
 
@@ -42,13 +42,13 @@ There are other ways to install Docker, but for the brevity of the article we wi
 
 ### 3.1. Update the `apt` package index
 
-```
+```bash
 $ sudo apt-get update
 ```
 
 ### 3.2. Install packages to allow `apt` to use a repository over HTTPS
 
-```
+```bash
 $ sudo apt-get install \
     apt-transport-https \
     ca-certificates \
@@ -58,19 +58,19 @@ $ sudo apt-get install \
 
 Verify that you now have the key with the fingerprint :
 
-```
+```bash
 $ sudo apt-key fingerprint 0EBFCD88
 ```
 
 ### 3.3. Add Docker’s official GPG key
 
-```
+```bash
 $ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 ```
 
 ### 3.4. Set up a stable repository
 
-```
+```bash
 $ sudo add-apt-repository \
    "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
    $(lsb_release -cs) \
@@ -83,13 +83,13 @@ $ sudo add-apt-repository \
 
 Since we have updated the package index, let us update the `apt` package index :
 
-```
+```bash
 $ sudo apt-get update
 ```
 
 Now, finally we will be able to install *Docker CE* :
 
-```
+```bash
 $ sudo apt-get install docker-ce
 ```
 
@@ -99,7 +99,7 @@ The above command will install the latest `stable` version of docker ce in our s
 
 To verifiy *Docker CE* is installed correctly, we will run the `hello-world` image in the container :
 
-```
+```bash
 $ sudo docker run hello-world
 ```
 

@@ -4,55 +4,62 @@ title:  "Git Basic Tutorial 2"
 date:   2017-04-09 07:10:19 +0530
 categories: git
 author: "abhishek shah"
+tags: git other
 ---
 
-In this post we will be looking at more Git commands.
+In this post we will be looking at more Git commands. And learn the basics of branching and merging with Git.
 
-To unstagae files, files are only unstagged at this moment, but still present.
-```
+To unstage files, files are only unstagged at this moment, but still present :
+
+```bash
 git reset <file-name>
 ```
 
-We may want to go back to previous state, we will go back to place where, when last commit took place
-```
+We may want to go back to previous state, we will go back to place where, when last commit took place :
+
+```bash
 git checkout -- <file-name>
 ```
 checkout takes us back to the point mentioned as argument.
 
 
-## Branching Basics
+## Branching with Git
+
 You may need to work on a bug or a new feature and you'd like to work on a separate branch out the main branch. So that, if anything goes wrong you can easily go back to previous stable state.
 
-
-```
+```bash
 git branch <branch-name>
 ```
-Creates a branch named - branch-name
+Creates a branch named - branch-name.
 
-```
+```bash
 git branch
 ```
 Lists all the branches and points out the current branch with *.
 
-To, move from current branch to one of the feature branch listed, use the following comman. 
-```
+To, move from current branch to one of the feature branch listed, use the following comman.
+
+```bash
 git checkout <branch-name>
 ```
 
+## Merging with Git
 
-## Merging Basics
+To merge the changes from current branch, switch back to master first :
 
-To merge the changes from current branch, switch back to master first. 
-```
+```bash
 git checkout master
 ```
-Then, to merge -
-```
+
+Then, to merge :
+
+```bash
 git merge <branch-name>
 ```
 
-You might want to delete the branch after merging. 
-```
+You might want to delete the branch after merging :
+
+```bash
 git branch -d <branch-name>
 ```
 

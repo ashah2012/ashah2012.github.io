@@ -4,7 +4,7 @@ title:  "Different types of Bean Injection in Spring"
 date:   2018-01-04 00:00:00 +0530
 categories: java spring
 author: "abhishek shah"
-tags: spring microservice
+tags: microservice
 ---
 
 
@@ -25,7 +25,7 @@ We'll look into Dependency Injection using XML and Annotation configuration.
 
 Add the following maven dependency :
 
-```
+```xml
 <dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>
@@ -35,7 +35,7 @@ Add the following maven dependency :
 
 And, let us create few classes - *model, repository* and a *service* :
 
-```
+```java
 public class Customer {
 
 	private String firstName;
@@ -44,7 +44,7 @@ public class Customer {
 }
 ```
 
-```
+```java
 public class CustomerRepositoryHibernate implements CustomerRepository {
 
     public List<Customer> findAll() {
@@ -62,7 +62,7 @@ public class CustomerRepositoryHibernate implements CustomerRepository {
 }
 ```
 
-```
+```java
 public class CustomerServiceImpl implements CustomerService {
 
     private CustomerRepository customerRepository;
@@ -86,7 +86,7 @@ We should use XML configuration when we want configuration code outside our appl
 
 In, *application context* file :
 
-```
+```xml
 <bean name="customerRepository"
    		 class="com.baeldung.repository.CustomerRepositoryHibernate"/>
 
@@ -105,7 +105,7 @@ We have defined two beans, namely, and we are injecting *customerRepository* i
 
 In, *application context* file :
 
-```
+```xml
 <bean name="customerRepository"
    		 class="com.baeldung.repository.CustomerRepositoryHibernate"/>
 
@@ -136,7 +136,7 @@ There are 3 types of class level bean annotations Spring provides, these are kno
 * *@Repository* - is a subtype of *@Component*, preferably used with data layer repository class
 * *@Service* - is a subtype of *@Component*, preferably used with service class
 
-Spring provides with one more additional way of dependency injection other than setter and constructor :
+Spring provides with one more additional way of dependency injection other than setter and constructor:
 
 * Member variable injection
 
@@ -144,7 +144,7 @@ Spring provides with an *@Autowired* annotation to inject dependency. To enable
 
 In application context file:
 
-```
+```xml
 <context:annotation-config/>
 <context:component-scan base-package="com.baeldung"/>
 ```
@@ -155,7 +155,7 @@ We are letting Spring search all the sub-packages and classes inside *com.baeld
 
 We will use *@Autowired* over a setter method to inject dependency :
 
-```
+```java
 @Autowired
  public void setCustomerRepository(CustomerRepository custRepository){
         this.customerRepository = custRepository;
@@ -166,7 +166,7 @@ We will use *@Autowired* over a setter method to inject dependency :
 
 We will use *@Autowired* over field constructor to inject dependency :
 
-```
+```java
 @Autowired
  public CustomerServiceImpl(CustomerRepository customerRepository) {
         super();
