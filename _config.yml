@@ -13,41 +13,46 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: abhishek shah's blog
-email:
+title: Abhishek Shah's Blog
+email: contact@abhishek-shah.org
 description: > # this means to ignore newlines until "baseurl:"
  Articles, proof of concepts, sharing works of 
  other developers. Important announcements. News and Events.  
 
-
 baseurl: "" # the subpath of your site, e.g. /blog
-url: http://abhishek-shah.org
+url: "http://abhishek-shah.org"
 twitter_username: avishek_20
 github_username: ashah2012
+google_analytics: UA-102588107-1
+disqus:
+    shortname: abhishek-shah-org
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      comments: true
+  -
+    scope:
+      path: ""
+      type: my_tags
+    values:
+      layout: by-tag
 
 # Build settings
 markdown: kramdown
 theme: minima
-
 exclude:
   - Gemfile
   - Gemfile.lock
 
-#permanalink
-permalink: none
-
-#google-analytics
-google_analytics: UA-102588107-1
-
-#disqus
-disqus:
-    shortname: abhishek-shah-org
-#excerpts
-show_excerpts: false
-
-
+collections:
+  my_tags:
+    output: true
+    permalink: /tag/:name/
 paginate: 7
-#remote_theme: mmistakes/minimal-mistakes
+paginate_path: "/page-:num/"
 
 # plugins
 plugins:
