@@ -4,8 +4,7 @@ title:  "Create your own Scalable Search Engine"
 date:   2017-07-20 00:00:00 +0530
 categories: projects
 author: "abhishek shah"
-drafts: true
-tags: kafka storm solr flume project
+tags: kafka 
 ---
 
 

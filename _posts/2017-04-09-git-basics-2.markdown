@@ -4,7 +4,7 @@ title:  "Git Basic Tutorial 2"
 date:   2017-04-09 07:10:19 +0530
 categories: git
 author: "abhishek shah"
-tags: git other
+tags: git
 ---
 
 In this post we will be looking at more Git commands. And learn the basics of branching and merging with Git.

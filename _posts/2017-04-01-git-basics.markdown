@@ -4,7 +4,7 @@ title:  "De Facto Version Control System - Git"
 date:   2017-04-01 11:10:19 +0530
 categories: git
 author: "abhishek shah"
-tags: other
+tags: git
 ---
 
 Git is now de facto version control system. Everybody is using GIT, and if you aren't, then it's time that you should start using it too. 

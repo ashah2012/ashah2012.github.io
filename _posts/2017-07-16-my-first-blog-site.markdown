@@ -4,7 +4,7 @@ title:  "My first blog site in 5 minutes"
 date:   2017-07-16 07:10:19 +0530
 categories: github
 author: "abhishek shah"
-tags: jekyll other
+tags: jekyll
 ---
 
 I created this blog site in under 5 minutes. Well technically little more than that.There were issues which had to be sorted out and googled. So if you're looking to create a blog site for yourself or want to help your developer friends, then this is what you were looking for.
