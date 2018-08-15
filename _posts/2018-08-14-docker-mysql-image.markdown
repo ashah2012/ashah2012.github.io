@@ -4,9 +4,9 @@ title:  "Running MYSQL in Docker Container"
 date:   2018-08-14 00:00:00 +0530
 categories: docker
 author: "abhishek shah"
+tags: docker
 ---
 
-## Overview
 
 In this short article, we'll look at running MYSQL in docker container. The official MYSQL image can be found here at [Docker Hub](https://hub.docker.com/_/mysql/).
 

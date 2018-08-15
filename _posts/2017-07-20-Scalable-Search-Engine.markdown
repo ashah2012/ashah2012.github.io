@@ -5,15 +5,16 @@ date:   2017-07-20 00:00:00 +0530
 categories: projects
 author: "abhishek shah"
 drafts: true
+tags: kafka storm solr flume project
 ---
 
-## A simple and scalable search engine
 
 I had been working on Apache Kafka, Apache Storm, Apache Solr and Apache Flume. Created few apps with these and then I thought what could we achieve more out of this combination?
 
 I have experience writing a web crawler in Python without using any frame work, learnt this at a course from Udacity Computer Science 101. When I was in college I wrote a web scraping module for a junior in Python using Beautiful Soup.
 
-So things that I have with me.
+So things that I have with me :
+
 * Streaming platform - [Apache Kafka](https://kafka.apache.org/http://storm.apache.org/)
 * Real Time Analysis tool - [Apache Storm](http://storm.apache.org/)
 * Data aggregator - [Apache Flume](https://flume.apache.org/)

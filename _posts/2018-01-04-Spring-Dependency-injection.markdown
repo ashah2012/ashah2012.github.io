@@ -4,11 +4,9 @@ title:  "Different types of Bean Injection in Spring"
 date:   2018-01-04 00:00:00 +0530
 categories: java spring
 author: "abhishek shah"
+tags: spring microservice
 ---
 
-
-
-## 1. Overview
 
 In this short guide, we'll look into the different types of Bean Injection in Spring. On broader terms, there are basically two types of injection available :
 

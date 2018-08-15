@@ -6,6 +6,8 @@ categories: git
 author: "abhishek shah"
 ---
 
+In this post we will be looking at more Git commands.
+
 To unstagae files, files are only unstagged at this moment, but still present.
 ```
 git reset <file-name>

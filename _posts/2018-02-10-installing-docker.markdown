@@ -4,9 +4,8 @@ title:  "Installing Docker in Linux Ubuntu"
 date:   2018-02-10 00:00:00 +0530
 categories: docker
 author: "abhishek shah"
+tags: docker
 ---
-
-## 1. Overview
 
 In this short guide, we will look at the steps required to install *Docker in Ubuntu*. *Docker* is not available from the package repository. We will have to add a new package repository and install *Docker* from there.
 

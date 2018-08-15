@@ -4,9 +4,8 @@ title:  "Apache Kafka Basics"
 date:   2018-08-05 00:00:00 +0530
 categories: kafka
 author: "abhishek shah"
+tags: kafka
 ---
-
-## 1. Overview
 
 In [Apache Kafka](https://kafka.apache.org), the system of Publish and Subscribe has been brought forward in a more resilient and fault tolerant way. In Kafka entity producing the event/message are called Producer and entity consuming the message are Consumer. The Publisher has their own set of APIs known as [Producer API](https://kafka.apache.org/documentation.html#producerapi), and Consumer has their own set of APIs, known as [Consumer API](https://kafka.apache.org/documentation.html#consumerapi).
 
