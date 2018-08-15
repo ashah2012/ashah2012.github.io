@@ -28,9 +28,7 @@ github_username: ashah2012
 # Build settings
 markdown: kramdown
 theme: minima
-gems:
-  - jekyll-feed
-  - jekyll-paginate
+
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -54,3 +52,4 @@ paginate: 7
 # plugins
 plugins:
  - jekyll-paginate
+ - jekyll-feed
