@@ -10,7 +10,7 @@ tags: docker
 My learning of [Docker](https://www.docker.com/) continues and I want to create as many Docker images till I get really comfortable with them. I will write a Dockerfile to
 create a Oracle Jdk 8 image. I usually refer [Arun Gupta](https://github.com/arun-gupta)'s [blog](http://blog.arungupta.me/) for my Docker learnings.
 
-In my previous [article](https://abhishek-shah.org/docker/2018/08/13/docker-mysql-image.html), I created a Dockerfile to run MySql in a container.
+In my previous [article](https://abhishek-shah.org/docker/2018/08/13/docker-mysql-image.html), I ran MySql in a container.
 
 ## Creating a Dockerfile
 
