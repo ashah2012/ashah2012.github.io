@@ -43,3 +43,12 @@ props.put("key.serializer", "org.apache.kafka.common.serialization.StringSeriali
 props.put("value.serializer", "org.apache.kafka.common.serialization.StringSerializer");
 ```
 
+## Undertstanding the Properties
+
+We have used the least of properties required to **create a Kafka Producer**. Let us understand about each of these property. :
+
+* `bootstrap.servers` address of any one broker. Since we have only one broker running at port 9092, hence we provided the broker's address.
+* `acks` acknowledge all. 
+
+
+Code is hosted at as repository. Feel free to check it out [here](https://github.com/ashah2012/kafka-client).
