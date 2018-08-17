@@ -27,7 +27,7 @@ Kafka clients include all the jars for Producer and Consumer. Same maven depende
 
 ## Configurations
 
-All the configuration data is written in `java.util.Dictionary.Hashtable.Properties` and passed as contructor parameter while instantiating a `Producer`.
+All the configuration data is written in `java.util.Properties` and passed as contructor parameter while instantiating a `Producer`.
 
 Sample code snippet illustrating few configurations for the Producer :
 
@@ -45,10 +45,10 @@ props.put("value.serializer", "org.apache.kafka.common.serialization.StringSeria
 
 ## Undertstanding the Properties
 
-We have used the least of properties required to **create a Kafka Producer**. Let us understand about each of these property. :
+We have used the least of properties required to **create a Kafka Producer**. Let us understand about each of these property :
 
 * `bootstrap.servers` address of any one broker. Since we have only one broker running at port 9092, hence we provided the broker's address.
 * `acks` acknowledge all. 
 
 
-Code is hosted at as repository. Feel free to check it out [here](https://github.com/ashah2012/kafka-client){:target="_blank"}.
+Code is hosted at Github as repository. Feel free to check it out [here](https://github.com/ashah2012/kafka-client){:target="_blank"}.
