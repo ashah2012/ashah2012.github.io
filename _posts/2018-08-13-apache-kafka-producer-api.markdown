@@ -51,4 +51,4 @@ We have used the least of properties required to **create a Kafka Producer**. Le
 * `acks` acknowledge all. 
 
 
-Code is hosted at as repository. Feel free to check it out [here](https://github.com/ashah2012/kafka-client).
+Code is hosted at as repository. Feel free to check it out [here](https://github.com/ashah2012/kafka-client){:target="_blank"}.
