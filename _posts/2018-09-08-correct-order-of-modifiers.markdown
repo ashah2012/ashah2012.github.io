@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Correct Order of modifiers in Java"
+title:  "Correct Order of Modifiers in Java"
 date:   2018-09-08 00:00:00 +0530
 categories: java
 author: "abhishek shah"
