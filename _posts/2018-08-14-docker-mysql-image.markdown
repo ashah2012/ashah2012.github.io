@@ -30,7 +30,7 @@ mysql:latest
  * `--name` - name of the container.
  * `-env` - sets the password as Environment variable.
  * `-p 6306:3306` - expose the port on which mysql is running, i.e, 3306 to host port 6306.
- * `-v /Documents/ashah/data/mysql: /var/lib/mysql` - maps the local volume on docker host to container volume at /var/lib/mysql.
+ * `-v /Documents/ashah/data/mysql:/var/lib/mysql` - maps the local volume on docker host to container volume at /var/lib/mysql.
  * `mysql:latest` - directing Docker to download the latest tag of the MYSQL image.
  
 ## That's it! 
