@@ -53,9 +53,9 @@ We will keep the dependencies simple as of now:
 	</dependencies>
 ```
 
-## We created a Spring Boot Application without inheriting the Parent POM
+## Conclusion
 
-Finally our POM should look like this:
+**We created a Spring Boot Application without inheriting the Parent POM**. Finally our POM should look like this:
 
 ```xml
 <project xmlns="http://maven.apache.org/POM/4.0.0"
