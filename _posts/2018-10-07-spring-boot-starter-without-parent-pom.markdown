@@ -9,9 +9,9 @@ tags: microservice
 
 
 In the previous article - [Sprint Boot Starters](https://abhishek-shah.org/java/spring/2018/10/06/spring-boot-starter.html), we set up Spring Boot project 
-and we saw we had to specify Maven Parent POM to `org.springframework.boot` `groupId `, but what if we different parent POM? 
+and we saw we had to specify Maven Parent POM to `org.springframework.boot` `groupId `, but what if we want a different parent POM? 
 
-I work for client where they have this a parent POM which must be inherited in our every project. 
+I work for a client where they have this, a parent POM which must be inherited in our every project. 
 
 We can still create a Sprint Boot application by using the `scope=import` of the dependency management. 
 
