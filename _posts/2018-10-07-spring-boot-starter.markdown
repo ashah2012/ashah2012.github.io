@@ -7,12 +7,12 @@ author: "abhishek shah"
 tags: microservice
 ---
 
-In this short guide, I'll explore how to setup a `spring boot` project. I will be using  `maven` as my dependency management tool. Spring Boot 
-is says in their official site that they're compatible with Apache Maven 3.2 or above. So make sure if you're following this, you've the right version of Maven installed.
+In this short guide, I'll be exploring how to **setup a Spring Boot project**. I will be using  *Maven* as my dependency management tool. Spring Boot 
+says in their official site that they're compatible with Apache Maven 3.2 or above. So make sure if you're following this, you've the right version of Maven installed.
 
-## Pom.xml
+## Project POM
 
-In my Spring Boot application, in `pom.xml` I added the following lines:
+In `pom.xml` I added the following lines:
 
 ```xml
 <!-- Inherit defaults from Spring Boot -->
@@ -46,14 +46,14 @@ Dependencies are added using one of the **Spring Boot Starter** project. In Mave
 ```
 
 So, I have added `spring-boot-starter-web` starters as my dependency.  All the important jars are added as Maven depdencies. And the best part is that we
-don't have to manage the versions compatible by ourself. Spring Boot does behind the scenes (Spring Boot maintains a BOM).
+don't have to manage the versions by ourself. Spring Boot does this behind the scenes (Spring Boot maintains a BOM).
 
 ## Running the application
 
-Spring Boot application is no different than a normal Java Maven project. Just do the following to run:
-* Build the jar - `mvn clean package`, and then run the executable jar. (build executable jar using a  Spring Boot Maven plugin)
+Spring Boot application is no different than a normal Java Maven project. I did the following to run:
+* Built the jar - `mvn clean package`, and then run the executable jar. (build executable jar using a  Spring Boot Maven plugin)
 
-`Hello World!` will greet you in the console output.
+`Hello World!` will greet us in the console output.
 
 ## Spring Boot Maven plugin 
 
