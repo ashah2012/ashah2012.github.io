@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Docker Cheat Sheet"
+title:  "Docker Cheat Sheet - Starter"
 date:   2019-01-16 00:00:00 +0530
 categories: docker
 author: "abhishek shah"
