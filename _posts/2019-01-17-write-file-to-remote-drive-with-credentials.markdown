@@ -4,7 +4,7 @@ title:  "Writing a file in Java to Remote Windows Drive using Credentials"
 date:   2019-01-17 00:00:00 +0530
 categories: java
 author: "abhishek shah"
-tags: java i/o credentials
+tags: java 
 ---
 
 So, a very tiring day at work. I wanted to write a file to a shared network drive. I was given the required credentails to logon to the network drive.
@@ -12,7 +12,7 @@ But the question was how do I do it programmtically?
 
 ## jCIFS - The answer
 
-I had never heard about [jCIFS](https://www.jcifs.org/) before today. And I am glad I was able to somehowe come across the right question on stackoverflow.
+I had never heard about [jCIFS](https://www.jcifs.org/) before today. And I am glad I was able to somehow come across the right question on stackoverflow.
 
 Coming back to the problem :
 * I had to write a file in a remote network drive.
@@ -33,7 +33,7 @@ while(( n = in.read( b )) > 0 ) {
 ``` 
 
 As mentioned, in their [API documentation](https://www.jcifs.org/src/docs/api/) -
-"the SmbFile, SmbFileInputStream , and SmbFileOutputStream classes are analogous to the File, FileInputStream, and FileOutputStream classes"
+"the SmbFile, SmbFileInputStream , and SmbFileOutputStream classes are analogous to the File, FileInputStream, and FileOutputStream classes".
 
 
 
