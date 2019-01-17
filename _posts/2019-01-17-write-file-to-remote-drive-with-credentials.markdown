@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Writing a file in Java to Remote Windows Drive using Credentials"
-date:   2019-01-1y 00:00:00 +0530
+date:   2019-01-17 00:00:00 +0530
 categories: java
 author: "abhishek shah"
 tags: java i/o credentials
