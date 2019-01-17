@@ -16,8 +16,7 @@
 title: Abhishek Shah's Blog
 email: contact@abhishek-shah.org
 description: > # this means to ignore newlines until "baseurl:"
- Articles, proof of concepts, sharing works of 
- other developers. Important announcements. News and Events.  
+ Articles, proof of concepts posted here are personal work Abhishek Shah.   
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://abhishek-shah.org"
