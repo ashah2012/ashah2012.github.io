@@ -20,10 +20,13 @@ Ich bin -> I am,
 Du bist -> You are
 
 * Mann - man
+* Manner - men
 * Frau - woman
+* Frauen - women
 * Junge - boy
 * Madchen - girl
 * Kind - child
+* Kinder - chiildren
 
 ### Articles 
 * Ein - a; usually used with junge, mann, kind, madchen
@@ -37,3 +40,17 @@ Examples - Die frau und der mann, das kind, der mann und der junge, die frau und
 ### Nouns
 * Brot - bread
 * Wasser - water
+
+## Little Advance Basics
+Wir - we
+Ihr - you (her)
+seid - are
+sind - are
+er - her
+sie -he
+
+For example - Ihr seid, wir sind
+Wir sind manner und ihr seid frauen. 
+
+
+
