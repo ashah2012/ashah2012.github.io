@@ -12,9 +12,9 @@ With so many things happening around this year we tend to lose ourselves in the 
 
 ## About
 
-Being a Java application developer for five years working with a multinational company is turning very monotonous for me. I decided to work as a freelancer. I came across [Toptal](https://www.toptal.com), and immediately saw an opportunity that can help me in this transformation. 
+Being a Java application developer for five years working with a multinational company is turning very monotonous for me. I decided to work as a freelancer. I got my first freelance project in April 2020. But honestly I was not happy, I guess I am looking for more. Then I came across [Toptal](https://www.toptal.com), and immediately saw an opportunity that can help me in this transformation. 
 
-But before we make this transition, let us revisit some of the projects I worked on, which can define my professional experience. I will also list the roles I played and the technical stack I used to complete my job.
+But before I make this transition, I want to formally introduce myself *by my work, by what I do, by what I can do*. I have never been good at interviews, I think they suck! So I guess speaking about my projects is a good way to tell more about myself,I will speak about a project which can define my professional experience. 
 
 ## The project
 
@@ -41,7 +41,7 @@ After 8 months and countless coffee breaks, our solution was ready. Written in [
 
 ## Some deep restrospection
 
-With all said about the product, let me walk you through my journey. Apart from being just a "developer", I got a chance to work with the different stakeholders to understand their concerns, I designed public APIs to integrate with other tools, quick prototyping, and countless demos. I also got a chance to improve my functional testing skills. In Agile based development, if something does not feel right then I would say trust your instincts. There is almost no wrong or right, just a dance between better and the best. We achieved the best with continuous improvement. This project transformed me from just a backend Java developer to something more. It defined me who I am today and what my client thinks of me.
+With all said about the product, let me walk you through my journey. Apart from being just a "developer", I got a chance to work with the different stakeholders to understand their concerns, I designed public APIs to integrate with other tools, quick prototyping, and countless demos. I also got a chance to improve my functional testing skills. In Agile based development, if something does not feel right then I would say trust your instincts. There is almost *no wrong or right*, just a dance between better and the best. We achieved the best with continuous improvement. This project transformed me from just a backend Java developer to something more. It defined me who I am today and what my client thinks of me.
 
 ## What now?
 
