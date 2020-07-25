@@ -4,17 +4,22 @@ title: About me
 permalink: /about/
 ---
 
-I live in Indian state of Kolkata. I have been working professionally for more than 5 years now. I am Java backend developer with some experience in Big Data tools as well.
+## Profile
 
-## Do I work ?.
+Abhishek is a Senior Application Developer and designer with more than 5 years of industry experience.
 
-I work for a US based software company, and have been developing software for clients who are based in Europe. 
+He has been actively involved in **developing** and **consulting** new and existing enterprise ecosystems.
 
-## What else do I do ? 
+Apart from his usual roles, he has been adding value to the technical platform in terms of performance improvements and functionalities.
 
-Movies and riding my motor bike are my favourite thing to do when I am not consumed by my work. 
-I am currently watching Dark on Netflix.
-I own 2017 model KTM Duke 200, I use it for my everyday commute and occassionally take it for a long road trip.
+His skills include - **Apache Kafka, ElasticSearch, Kafka Streams, Java and Python**.
+
+
+## Technical Skills 
+
+- Operating Systems - RHEL, Suse, Solaris 10, Windows Server 2008
+- Languages - Java 8, Python 3, Javascript
+- Libarary/Tools - Spring Core, Spring Boot, Spring Security, Spring Cloud, Spring Data Mongo, Spring Data JPA
 
 ## What can I do?
 
