@@ -1,4 +1,0 @@
----
-slug: german
-name: German
----

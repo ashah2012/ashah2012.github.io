@@ -1,59 +1,11 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: Abhishek Shah's Blog
+title: Abhishek Shah
 email: contact@abhishek-shah.org
-description: > # this means to ignore newlines until "baseurl:"
- Articles, proof of concepts posted here are personal work Abhishek Shah.   
-
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://abhishek-shah.org"
-twitter_username: avishek_20
+url: "https://abhishek-shah.org"
 github_username: ashah2012
-google_analytics: UA-102588107-1
-disqus:
-    shortname: abhishek-shah-org
-defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      comments: true
-  -
-    scope:
-      path: ""
-      type: my_tags
-    values:
-      layout: by-tag
+twitter_username: avishek_20
 
-# Build settings
 markdown: kramdown
 theme: minima
-exclude:
-  - Gemfile
-  - Gemfile.lock
 
-collections:
-  my_tags:
-    output: true
-    permalink: /tag/:name/
-paginate: 7
-paginate_path: "/page-:num/"
-
-# plugins
 plugins:
- - jekyll-paginate
- - jekyll-feed
+  - jekyll-feed
