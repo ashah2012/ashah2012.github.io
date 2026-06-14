@@ -1,11 +1,16 @@
 title: Abhishek Shah
-email: contact@abhishek-shah.org
-url: "https://abhishek-shah.org"
+email: contact@abhishek-shah.dev
+url: "https://abhishek-shah.dev"
 github_username: ashah2012
 twitter_username: avishek_20
+description: "Software engineer focused on AI and mathematics."
 
 markdown: kramdown
-theme: minima
+permalink: /blog/:year/:month/:day/:title/
 
 plugins:
   - jekyll-feed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
