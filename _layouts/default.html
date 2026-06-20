@@ -4,8 +4,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{% if page.title and page.title != site.title %}{{ page.title }} — {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
-  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | strip_newlines | truncate: 160 }}" />
+  {% assign page_description = page.excerpt | default: site.description | strip_html | strip_newlines | truncate: 160 %}
+  {% assign page_title = page.title | default: site.title %}
+  <meta name="description" content="{{ page_description }}" />
   <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="/feed.xml" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="{{ page_title }}" />
+  <meta property="og:description" content="{{ page_description }}" />
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="{{ page_title }}" />
+  <meta name="twitter:description" content="{{ page_description }}" />
   <style>
     *, *::before, *::after {
       box-sizing: border-box;
@@ -299,6 +310,68 @@
       font-size: 0.78rem;
       color: #bbb;
     }
+
+    /* Resume */
+    .resume-download {
+      display: inline-block;
+      font-size: 0.875rem;
+      color: #111;
+      text-decoration: none;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 1px;
+      margin-bottom: 40px;
+      transition: border-color 0.15s ease;
+    }
+
+    .resume-download:hover {
+      border-color: #111;
+    }
+
+    .resume-entry {
+      margin-bottom: 28px;
+    }
+
+    .resume-entry-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .resume-role {
+      font-size: 0.975rem;
+      font-weight: 600;
+      color: #111;
+    }
+
+    .resume-dates {
+      font-size: 0.8rem;
+      color: #aaa;
+      white-space: nowrap;
+    }
+
+    .resume-location {
+      font-size: 0.85rem;
+      color: #888;
+      margin-bottom: 10px;
+    }
+
+    .resume-entry ul {
+      padding-left: 18px;
+    }
+
+    .resume-entry li {
+      font-size: 0.9rem;
+      color: #333;
+      margin-bottom: 4px;
+    }
+
+    @media print {
+      nav, footer, .resume-download {
+        display: none;
+      }
+    }
   </style>
 </head>
 <body>
@@ -307,6 +380,7 @@
       <a href="/" class="nav-name">{{ site.title }}</a>
       <ul class="nav-links">
         <li><a href="/" {% if page.url == '/' %}class="active"{% endif %}>About</a></li>
+        <li><a href="/resume" {% if page.url contains '/resume' %}class="active"{% endif %}>Resume</a></li>
         <li><a href="/blog" {% if page.url contains '/blog' %}class="active"{% endif %}>Blog</a></li>
       </ul>
     </nav>
