@@ -96,6 +96,26 @@
       color: #333;
     }
 
+    /* About list */
+    .about-list {
+      list-style: none;
+      font-size: 0.975rem;
+      color: #333;
+    }
+
+    .about-list li {
+      position: relative;
+      padding-left: 16px;
+      margin-bottom: 10px;
+    }
+
+    .about-list li::before {
+      content: "—";
+      position: absolute;
+      left: 0;
+      color: #ccc;
+    }
+
     /* Links row */
     .links {
       display: flex;
