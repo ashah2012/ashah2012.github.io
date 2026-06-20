@@ -3,20 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>{% if page.title and page.title != site.title %}{{ page.title }} — {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
-  {% assign page_description = page.excerpt | default: site.description | strip_html | strip_newlines | truncate: 160 %}
-  {% assign page_title = page.title | default: site.title %}
-  <meta name="description" content="{{ page_description }}" />
-  <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="/feed.xml" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="{{ page_title }}" />
-  <meta property="og:description" content="{{ page_description }}" />
-  <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="{{ page_title }}" />
-  <meta name="twitter:description" content="{{ page_description }}" />
+  {% feed_meta %}
+  {% seo %}
   <style>
     *, *::before, *::after {
       box-sizing: border-box;
@@ -75,6 +64,20 @@
     /* Main content */
     main {
       padding: 72px 0 96px;
+    }
+
+    /* Home intro */
+    .home-title {
+      font-size: 1.75rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      margin-bottom: 8px;
+    }
+
+    .home-tagline {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 44px;
     }
 
     /* Sections */

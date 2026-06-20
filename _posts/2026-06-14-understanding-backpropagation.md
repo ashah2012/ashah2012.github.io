@@ -2,6 +2,9 @@
 layout: post
 title: "Understanding Backpropagation from Scratch"
 date: 2026-06-14
+description: >-
+  A clear walkthrough of backpropagation in neural networks — the chain rule,
+  gradient computation, and why it made deep learning possible.
 ---
 
 Backpropagation is the algorithm that makes neural networks learn. Despite its reputation as a black box, it's really just the chain rule from calculus applied systematically across a computation graph.
