@@ -1,15 +1,32 @@
 title: Abhishek Shah
+tagline: Backend Engineer & Software Developer
 email: contact@abhishek-shah.dev
 url: "https://abhishek-shah.dev"
 github_username: ashah2012
 twitter_username: avishek_20
-description: "Software engineer focused on AI and mathematics."
+description: >-
+  Abhishek Shah is a backend engineer with 11+ years of experience building APIs
+  and data systems for the finance industry. Writing about backend engineering,
+  distributed systems, and the mathematics behind AI.
+lang: en
+
+author:
+  name: Abhishek Shah
+
+social:
+  name: Abhishek Shah
+  links:
+    - https://github.com/ashah2012
+    - https://www.linkedin.com/in/abhishekshah20/
+    - https://twitter.com/avishek_20
 
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title/
 
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
 
 exclude:
   - Gemfile
